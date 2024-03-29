@@ -125,9 +125,10 @@
             <input type="button" id="mybutton" value="click me" class="myclass">
 
             <script type="text/javascript">
-                var elements = document.getElementsByClassName("myclass");
-                
-                alert(elements[0].id)
+                var element = document.getElementById("mybutton");
+                element.addEventListener("click", function(){
+                        alert("Message was sent");
+                });
             </script>
         </div>
     </div>
