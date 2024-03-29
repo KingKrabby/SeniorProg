@@ -117,6 +117,68 @@ a{
     flex-basis: 25%;
     align-self: flex-start;
 }
+.sideBarProfile{
+    background: #fff;
+}
+.sideBarProfileInfo{
+    padding: 0 25px;
+}
+.sideBarProfileInfo img{
+    width: 90px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 4px;
+    margin-top: -45px;
+}
+.sideBarProfileInfo h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+.sideBarProfileInfo h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+}
+.sideBarProfileInfo ul{
+    list-style: none;
+    margin: 20px 0;
+}
+.sideBarProfileInfo ul li{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 13px;
+}
+.sideBarProfileInfo ul li span{
+    float: right;
+    color: #e68f04;
+}
+.sideBarProfileLink{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+
+.sideBarProfileLink a{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 13px;
+    border-left: 1px solid #ccc;
+}
+.sideBarProfileLink a:first-child{
+    border-left: 0;
+}
+.sideBarProfileLink a img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+
+
 /*----Right Sidebar----*/
 .right-Sidebar{
     flex-basis: 25%;
