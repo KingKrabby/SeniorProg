@@ -39,3 +39,13 @@ a{
     margin: 5px 8px;
     padding-right: 5px;
 }
+.navBar-middle ul li a img{
+    width: 30px;
+}
+.navProfileIMG{
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
