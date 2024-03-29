@@ -103,3 +103,26 @@ a{
     outline: none;
     border: 0;
 }
+/*----Navbar end----*/
+
+.home{
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*----Left Sidebar----*/
+.left-Sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+/*----Right Sidebar----*/
+.right-Sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+/*----Main Content----*/
+.main-Content{
+    flex-basis: 47%;
+}
