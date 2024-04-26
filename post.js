@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     postButton.addEventListener('click', () => {
         const postData = {
-            author: "Your Name", // Change to actual user name
+            author: "Michael Hunt", // Change to actual user name
             timestamp: "Just now",
             content: postText.value.trim(),
             likes: 0 // Initialize likes to 0
@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (file.type.startsWith('image/')) {
                     const img = document.createElement('img');
                     img.src = URL.createObjectURL(file);
+                    img.height = 600;
                     postMediaElement.appendChild(img);
                 } else if (file.type.startsWith('video/')) {
                     const video = document.createElement('video');
