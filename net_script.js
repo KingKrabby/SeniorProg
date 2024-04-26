@@ -5,17 +5,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Sample data for connections and suggestions
     let connectionRequests = [
-        { name: "Alice Johnson", profession: "Web Developer", imgSrc: "Images/user-1.jpg", id: 1 }
+        { name: "Alice Johnson", profession: "Web Developer", imgSrc: "Images/user-4.png", id: 1 }
     ];
 
 
     let connections = [
-        { name: "Jane Doe", profession: "Software Engineer", imgSrc: "path/to/image1.jpg", id: 2 }
+        { name: "Jane Doe", profession: "Software Engineer", imgSrc: "Images/user-2.png", id: 2 }
     ];
 
 
     let suggestions = [
-        { name: "Bob Brown", profession: "Data Scientist", imgSrc: "path/to/image4.jpg", id: 3 }
+        { name: "Bob Brown", profession: "Data Scientist", imgSrc: "Images/user-3.png", id: 3 }
     ];
     // DOM elements
     const connectionRequestsList = document.getElementById('connectionRequests');
