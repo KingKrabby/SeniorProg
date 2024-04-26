@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Sample data for connections and suggestions
     let connectionRequests = [
-        { name: "Alice Johnson", profession: "Web Developer", imgSrc: "Images/user-4.png", id: 1 }
+        { name: "Alice Johnson", profession: "Web Developer", imgSrc: "Images/user-1.png", id: 1 }
     ];
 
 
@@ -29,11 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const div = document.createElement('div');
             div.className = 'profile';
             div.innerHTML = `
-                <img src="${item.imgSrc}" alt="Profile picture of ${item.name}">
-                <div class="info">
-                    <strong>${item.name}</strong>
-                    <p>${item.profession}</p>
-                </div>
+                <img src="${item.imgSrc}" width = "40px" height = "40px" alt="Profile picture of ${item.name}"><strong font-size: 40px>${item.name}</strong><p>${item.profession}</p>
             `;
 
 
