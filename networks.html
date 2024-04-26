@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Project Connections</title>
+    <link rel="stylesheet" href="net_styles.css">
+</head>
+<body>
+
+
+<nav class="navBar">
+    <div class="navBar-left">
+        <a href="index.html" class="logo"><img src="Images/RPC Logo.png" ></a>
+
+
+        <div class="searchBar">
+            <img src="Images/search.png">
+            <input type="text" placeholder="Search">
+        </div>
+
+
+    </div>
+    <div class="navBar-middle">
+        <ul>
+            <li><a href="index.html" class="activeLink"><img src="Images/home.png"> <span>Home</span></a></li>
+            <li><a href="networks.html"><img src="Images/network.png"> <span>Network</span></a></li>
+            <li><a href="projects.html"><img src="Images/jobs.png"> <span>Projects</span></a></li>
+            <li><a href="#"><img src="Images/message.png"> <span>Messages</span></a></li>
+            <li><a href="#"><img src="Images/notification.png"> <span>Notifications</span></a></li>
+        </ul>
+    </div>
+    <div class="navBar-right">
+        <div class="online">
+            <img src="Images/user-1.png" class="navProfileIMG">
+        </div>
+
+
+    </div>
+</nav>
+
+
+<!-- ---Navbar close--- -->
+
+
+<div class="home">
+    <!-- ---Left Sidebar--- -->
+    <div class="left-Sidebar">
+        <div class="sideBarProfile">
+            <img src="Images/cover-pic.png" width="100%">
+            <div class="sideBarProfileInfo">
+                <img src="Images/user-1.png">
+                <h1>Michael Hunt</h1>
+                <h3>Computer Science Professor</h3>
+                <ul>
+                    <li>Your profile views: <span>15</span></li>
+                    <li>Your post views: <span>6</span></li>
+                    <li>Your connection views: <span>9</span></li>
+                </ul>
+            </div>
+            <div class="sideBarProfileLink">
+                <a href="profile.html"><img src="Images/items.png"> My Items</a>
+                <a href="#"><img src="Images/premium.png"> Try Premium</a>
+            </div>
+        </div>
+
+
+        <div class="sideBarActivity">
+            <h3>RECENT ACTIVITY</h3>
+            <a href="#"><img src="Images/recent.png"> Web Development</a>
+            <a href="#"><img src="Images/recent.png"> User Interface </a>
+            <a href="#"><img src="Images/recent.png"> Online Learning </a>
+            <a href="#"><img src="Images/recent.png"> Learn Online</a>
+            <a href="#"><img src="Images/recent.png"> Code Better</a>
+            <a href="#"><img src="Images/recent.png"> Group Learning</a>
+            <h3>GROUPS</h3>
+            <a href="#"><img src="Images/group.png"> Web Design</a>
+            <a href="#"><img src="Images/group.png"> HTML & CSS Learners</a>
+            <a href="#"><img src="Images/group.png"> Python & CSS Group</a>
+            <a href="#"><img src="Images/group.png"> Learn Coding Online</a>
+            <h3>HASTAG</h3>
+            <a href="#"><img src="Images/Ohashtag.png"> webdevelopment</a>
+            <a href="#"><img src="Images/Ohashtag.png"> userinterface</a>
+            <a href="#"><img src="Images/Ohashtag.png"> onlinelearning</a>
+            <div class="discoverMore">
+                <a href="#">Find & Add More</a>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content for Network interactions -->
+    <div class="main-Content">
+        <h2>Connection Requests</h2>
+        <div id="connectionRequests" class="connection-requests"></div>
+        <h2>My Connections</h2>
+        <div id="connectionsList" class="connection-list"></div>
+        <h2>Suggestions</h2>
+        <div id="suggestionsList" class="suggestion-list"></div>
+    </div>
+
+    <!-- ---Right Sidebar--- -->
+   
+</div>
+<!-- Add the profile modal outside of your existing .home div -->
+<div id="profileModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="Images/user-1.png" id="profilePic" class="modal-profile-pic">
+        <h1 id="profileName">Name</h1>
+        <h3 id="profileTitle">Title</h3>
+        <p id="profileAbout">A little bit about this person...</p>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/yourfontawesomekit.js"></script>
+<script src="net_script.js"></script>
+</body>
+</html>
