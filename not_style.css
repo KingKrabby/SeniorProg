@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f5;
+}
+
+
+.header {
+    background-color: #3f3126;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.notification-container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.notification-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.notification-item {
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+    position: relative;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.notification-item:hover {
+    background: #f9f9f9;
+}
+
+
+.button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+.read-button {
+    background-color: #28a745;
+}
+
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+
+@media (max-width: 600px) {
+    .main-container {
+        padding: 10px;
+    }
+}
