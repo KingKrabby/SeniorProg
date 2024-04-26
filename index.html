@@ -82,38 +82,20 @@
     </div>
     <!-- ---Main Content--- -->
     <div class="main-Content">
-
         <div class="makePost">
             <div class="makePostInput">
                 <img src="Images/user-1.png">
-                <textarea rows="2" placeholder="Write a post"></textarea>
+                <textarea id="postText" rows="2" placeholder="Write a post"></textarea>
             </div>
             <div class="makePostLinks">
-                <li><img src="Images/photo.png">Photo</li>
-                <li><img src="Images/video.png">Video</li>
-                <li><img src="Images/event.png">Event</li>
-                <li>Post</li>
+                <label for="photoVideo"><img src="Images/photo.png">Photo</label>
+                <input type="file" id="photoVideo" accept="image/*, video/*" multiple>
+                <button id="postButton">Post</button>
             </div>
         </div>
-        <div class="sortBy">
-            <hr>
-            <p>Sort by: <span>top <img src="Images/down-arrow.png"></span></p>
-        </div>
-
-        <div class="post">
-            <div class="postUser">
-                <img src="Images/user-3.png">
-                <div>
-                    <h1>Boss Kicks</h1>
-                    <small>Engineering Professor</small>
-                    <small>2 hours ago</small>
-                </div>
-            </div>
-            <p>Looking for applicants available between March 15th - August 23rd for a paid project relating to Google and NVIDIA.  Please reach out for more information</p>
-            <img src="Images/post-image-1.png" width="100%">
-        </div>
-
+        <div id="postContainer" class="posts"></div>
     </div>
+
     <!-- ---Right Sidebar--- -->
     <div class="right-Sidebar">
         <div class="contacts">
@@ -133,7 +115,7 @@
     </div>
 </div>
 
-
-
+<script src="https://kit.fontawesome.com/yourfontawesomekit.js"></script>
+<script src="post.js"></script>
 </body>
 </html>
