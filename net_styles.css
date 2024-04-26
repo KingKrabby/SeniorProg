@@ -242,22 +242,18 @@ a {
 
 /*------ Connections Section -------*/
 .main-Content{
-    flex-basis: 47%;
+    flex-basis: 70%;
 }
 
-
-.connection-requests div,
-.connection-list div,
-.suggestion-list div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background: #f9f9f9;
-    margin-bottom: 10px;
-    border-radius: 4px;
+.connection-Requests{
+    background: #fff;
 }
-
+.connection-list{
+    background: #fff;
+}
+.suggestion-list{
+    background: #fff;
+}
 
 /* Button styles */
 button {
