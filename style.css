@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #ab923e;
+    background: #f0f0f0;
     color: #5f5f5f;
 }
 a{
@@ -16,7 +16,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fcd657;
+    background: #fff;
     padding: 6px 6%;
     position: sticky;
     top: 0;
@@ -30,7 +30,7 @@ a{
 }
 .navBar-middle ul li{
     display: inline-block;
-    list-style: none;   
+    list-style: none;  
 }
 .navBar-middle ul li a{
     display: flex;
@@ -44,20 +44,23 @@ a{
     width: 30px;
 }
 
+
 .navBar-middle ul li a::after{
     content: '';
     width: 0;
     height: 2px;
-    background: #000000;
+    background: #e68f04;
     position: absolute;
     bottom: -15px;
     transition: width 0.3s;
 }
-.navBar-middle ul li a:hover::after, 
+.navBar-middle ul li a:hover::after,
 .navBar-middle ul li a.activeLink::after
 {
     width: 100%;
 }
+
+
 
 
 .navProfileIMG{
@@ -105,12 +108,14 @@ a{
 }
 /*----Navbar end----*/
 
+
 .home{
     padding: 20px 6%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 
 /*----Left Sidebar----*/
 .left-Sidebar{
@@ -159,6 +164,7 @@ a{
     border-top: 1px solid #ccc;
 }
 
+
 .sideBarProfileLink a{
     flex-basis: 50%;
     display: flex;
@@ -195,6 +201,7 @@ a{
     margin: 3px 0;
 }
 
+
 .sideBarActivity a img{
     width: 20px;
     margin-right: 10px;
@@ -215,13 +222,15 @@ a{
 
 
 
+
+
+
+
 /*----Right Sidebar----*/
 .right-Sidebar{
     flex-basis: 25%;
     align-self: flex-start;
 }
-
-
 /*----Main Content----*/
 .main-Content{
     flex-basis: 47%;
