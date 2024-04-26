@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
+    //var imgSrc = pic;
+    //pic.style.height = '40px';
+    //pic.style.width = '40px';
+
     // Sample data for connections and suggestions
     let connectionRequests = [
-        { name: "Alice Johnson", profession: "Web Developer", imgSrc: "Images/user-1.png", id: 1 }
+        { name: "Alice Johnson", profession: "Web Developer", imgSrc: "Images/user-1.jpg", id: 1 }
     ];
 
 
@@ -13,8 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let suggestions = [
         { name: "Bob Brown", profession: "Data Scientist", imgSrc: "path/to/image4.jpg", id: 3 }
     ];
-
-
     // DOM elements
     const connectionRequestsList = document.getElementById('connectionRequests');
     const connectionsList = document.getElementById('connectionsList');
