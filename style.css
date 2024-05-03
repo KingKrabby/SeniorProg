@@ -233,7 +233,7 @@ a{
 }
 /*----Main Content----*/
 .main-Content{
-    flex-basis: 47%;
+    flex-basis: 45%;
 }
 .makePost{
     background: #fff;
@@ -338,10 +338,8 @@ a{
 }
 
 /* --- Messaging --- */
-.container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+.message-content {
+    flex-basis: 15%;
 }
 
 .user {

@@ -2,7 +2,7 @@
 let userProfile = {
     name: "John Doe",
     email: "john@example.com",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    bio: "Fill in your 'About me' section"
 };
 
 // Function to populate form fields with user profile data
