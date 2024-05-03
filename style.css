@@ -336,3 +336,43 @@ a{
     font-size: 14px;
     margin-bottom: 15px;
 }
+
+/* --- Messaging --- */
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.user {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.messages {
+    height: 150px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+}
+
+input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

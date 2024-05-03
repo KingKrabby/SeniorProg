@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Notification Center</title>
-    <link rel="stylesheet" href="not_style.css">
+    <title>Messaging System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,18 +32,24 @@
             </div>
         </div>
     </nav>
-    <header class="header">
-        <h1>Notification Center</h1>
-    </header>
-    <main class="main-container">
-        <div class="notification-container">
-            <div id="notificationList" class="notification-list">
-                <!-- Notifications will be added here dynamically -->
-            </div>
+    <div class="container">
+        <div class="user" id="alice">
+            <h2>Alice</h2>
+            <div class="messages" id="alice-messages"></div>
+            <form onsubmit="sendMessage('alice', 'bob'); return false;">
+                <input type="text" id="alice-message-input" placeholder="Type message...">
+                <button type="submit">Send</button>
+            </form>
         </div>
-    </main>
-
-
-    <script src="not_script.js"></script>
+        <div class="user" id="bob">
+            <h2>Bob</h2>
+            <div class="messages" id="bob-messages"></div>
+            <form onsubmit="sendMessage('bob', 'alice'); return false;">
+                <input type="text" id="bob-message-input" placeholder="Type message...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="messaging.js"></script>
 </body>
 </html>

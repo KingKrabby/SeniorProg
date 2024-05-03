@@ -24,7 +24,7 @@
                 <li><a href="index.html" class="activeLink"><img src="Images/home.png"> <span>Home</span></a></li>
                 <li><a href="networks.html"><img src="Images/network.png"> <span>Network</span></a></li>
                 <li><a href="projects.html"><img src="Images/jobs.png"> <span>Projects</span></a></li>
-                <li><a href="#"><img src="Images/message.png"> <span>Messages</span></a></li>
+                <li><a href="messages.html"><img src="Images/message.png"> <span>Messages</span></a></li>
                 <li><a href="notification.html"><img src="Images/notification.png"> <span>Notifications</span></a></li>
             </ul>
         </div>
@@ -97,22 +97,25 @@
     </div>
 
     <!-- ---Right Sidebar--- -->
-    <div class="right-Sidebar">
-        <div class="contacts">
-            <input type="checkbox" id="box">
+    <div class="container">
+        <div class="user" id="alice">
+            <h2>Alice</h2>
+            <div class="messages" id="alice-messages"></div>
+            <form onsubmit="sendMessage('alice', 'bob'); return false;">
+                <input type="text" id="alice-message-input" placeholder="Type message...">
+                <button type="submit">Send</button>
+            </form>
         </div>
-        <div class="chat">
-            <input type="text" id="mytextbox" class="myclass">
-            <input type="button" id="mybutton" value="click me" class="myclass">
-
-            <script type="text/javascript">
-                var element = document.getElementById("mybutton");
-                element.addEventListener("click", function(){
-                        alert("Message was sent");
-                });
-            </script>
+        <div class="user" id="bob">
+            <h2>Bob</h2>
+            <div class="messages" id="bob-messages"></div>
+            <form onsubmit="sendMessage('bob', 'alice'); return false;">
+                <input type="text" id="bob-message-input" placeholder="Type message...">
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
+    <script src="messaging.js"></script>
 </div>
 
 <script src="https://kit.fontawesome.com/yourfontawesomekit.js"></script>
