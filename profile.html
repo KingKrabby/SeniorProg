@@ -35,20 +35,28 @@
             </div>
         </nav>
         <div class="profile-container">
-            <div class="profile-details">
-                <h2>About Me</h2>
-                <p>Michael Hunt became the head computer science professor at Generic University in 2014</p>
-                <p>Email: example@example.com</p>
-            </div>
-            <div class="profile-image">
-                <img src="Images/user-1.png">
-            </div>
+            <h1>Edit Profile</h1>
+            <form id="profile-form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio"></textarea>
+                </div>
+                <button type="submit">Save Changes</button>
+            </form>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 Profile Page</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="profile.js"></script>
 </body>
 </html>
 
