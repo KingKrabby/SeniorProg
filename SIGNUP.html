@@ -67,44 +67,34 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Login</h2>
+        <h2>Sign Up </h2>
         <form id="loginForm" action="" method="post">
+            <input type="text" name="Firstname" placeholder="Firstname" required>
+            <input type="text" name="Lastname" placeholder="Lastname" required>
+            <input type="date" name="Date of Birth " placeholder="Date of Birth" required>
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
-            <a href="SIGNUP.html">Sign Up </a>
+            <input type="password" name="Re type password" placeholder="Password" required>
+
+
+            <input type="submit" value="Signup">
         </form>
         <div class="message"></div>
     </div>
-
-
     <script>
         const loginForm = document.getElementById('loginForm');
         const messageDiv = document.querySelector('.login-container .message');
 
 
         loginForm.addEventListener('submit', (event) => {
-            event.preventDefault(); // Prevent the default form submission
+            event.preventDefault();
 
 
-            // You can add your authentication logic here
-            const username = event.target.elements.username.value;
-            const password = event.target.elements.password.value;
-
-
-            // For this example, let's assume hardcoded credentials
-            const validUsername = 'dummyProf@gmail.com';
-            const validPassword = 'password';
-
-
-            if (username === validUsername && password === validPassword) {
-                // Redirect to the home page (index.html)
-                window.location.href = 'index.html';
-            } else {
-                // Display an error message
-                messageDiv.textContent = 'Invalid username or password';
-            }
-        });
+         
+                window.location.href = 'login.html';
+           });
     </script>
-</body>
+
+
+   </body>
 </html>

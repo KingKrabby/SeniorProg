@@ -1,7 +1,7 @@
 // Simulated user profile data
 let userProfile = {
-    name: "John Doe",
-    email: "john@example.com",
+    name: "Michael Hunt",
+    email: "dummy@example.com",
     bio: "Fill in your 'About me' section"
 };
 
